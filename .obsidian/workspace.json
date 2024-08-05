@@ -37,8 +37,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/index.md",
-                "mode": "preview",
+                "file": "article/Engineering/Python Launching.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -127,7 +127,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "article/index.md",
+                "file": "article/Engineering/Python Launching.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/index.md"
+                "file": "article/Engineering/Python Launching.md"
               }
             }
           },
@@ -192,7 +192,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/index.md",
+                "file": "article/Engineering/Python Launching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,7 +209,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/index.md",
+                "file": "article/Engineering/Python Launching.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,8 +246,10 @@
   },
   "active": "9b92f36af2f6ad1e",
   "lastOpenFiles": [
-    "article/Security/Windows Sandbox from Scratch.md",
+    "article/Engineering/Blogging with Notion.md",
+    "article/Engineering/Python Launching.md",
     "article/index.md",
+    "article/Security/Windows Sandbox from Scratch.md",
     "vite.config.ts.timestamp-1722880130684-8179b820cddee.mjs",
     "vite.config.ts.timestamp-1722880123046-54a7982b27b56.mjs",
     "node_modules/@rollup/rollup-android-arm-eabi",
@@ -280,8 +282,6 @@
     "node_modules/@typescript-eslint/eslint-plugin/docs/rules/indent.md",
     "node_modules/@typescript-eslint/eslint-plugin/docs/rules/func-call-spacing.md",
     "node_modules/@typescript-eslint/eslint-plugin/docs/rules/comma-spacing.md",
-    "node_modules/@typescript-eslint/eslint-plugin/docs/rules/comma-dangle.md",
-    "node_modules/@typescript-eslint/eslint-plugin/docs/rules/camelcase.md",
     "node_modules/@nolebase/vitepress-plugin-og-image/dist/vitepress/assets/og-template.svg",
     "node_modules/@unocss/inspector/dist/client/favicon.svg",
     "node_modules/vite-plugin-inspect/dist/client/favicon.svg",
