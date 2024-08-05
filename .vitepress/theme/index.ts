@@ -31,9 +31,10 @@ import {
 
 import AppContainer from './components/AppContainer.vue'
 import DocFooter from './components/DocFooter.vue'
-import HomePage from './components/HomePage.vue'
+// import HomePage from './components/HomePage.vue'
 // import Share from './components/Share.vue'
 import TocList from './components/TocList.vue'
+import Giscus from './components/Giscus'
 
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
@@ -57,6 +58,7 @@ const ExtendedTheme: Theme = {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
       'doc-top': () => [
         h(NolebaseHighlightTargetedHeading),
+        h(Giscus),
       ],
       'doc-footer-before': () => [
         h(DocFooter),
