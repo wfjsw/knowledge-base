@@ -1,0 +1,270 @@
+{
+  "main": {
+    "id": "25f4cc8f077230c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "82a8c0d8a989a292",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8fdbc022d1449898",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3698b8c616aabcfc",
+    "type": "split",
+    "children": [
+      {
+        "id": "b15e2c7929b2a46a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b5dfc4e6c8287ee4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d5332c2bfa4468de",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "基础设施 AWS",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f568bf7e439d398b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "955041b03cbffb02",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "0972447421cfef3d",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 305.5
+  },
+  "right": {
+    "id": "246bd0838f8f40a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "166ecf9eee3475b0",
+        "type": "tabs",
+        "dimension": 31.92019950124688,
+        "children": [
+          {
+            "id": "d9c447a5c56d10b5",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": true,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 0.9960205078125,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": false,
+                  "centerStrength": 0.298746744791667,
+                  "repelStrength": 13.7809244791667,
+                  "linkStrength": 1,
+                  "linkDistance": 30,
+                  "scale": 1.737146941803905,
+                  "close": true
+                }
+              }
+            }
+          },
+          {
+            "id": "d05b2adb58e8f322",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "dedba0695c22f869",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "2ac176b8dbb5d7eb",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "00f8f8ad2cb9f9b0",
+        "type": "tabs",
+        "dimension": 68.07980049875312,
+        "children": [
+          {
+            "id": "ccb7652bb733a848",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5f488e06357db2c6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "109c669fb0e4b88f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 366.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "8fdbc022d1449898",
+  "lastOpenFiles": [
+    "视图/尚未编写完成的页面.md",
+    "views/未添加标签的页面.md",
+    "views/尚未编写完成的页面.md",
+    "views",
+    "article/index.md",
+    "article",
+    "package-lock.json",
+    "node_modules/@vueuse/shared/node_modules/vue-demi/lib/v3/index.mjs",
+    "node_modules/@vueuse/shared/node_modules/vue-demi/lib/v3/index.d.ts",
+    "node_modules/@vueuse/shared/node_modules/vue-demi/lib/v3/index.cjs",
+    "node_modules/@vueuse/shared/node_modules/vue-demi/lib/v2.7/index.mjs",
+    "node_modules/@vueuse/shared/node_modules/vue-demi/lib/v2.7/index.d.ts",
+    "node_modules/@vueuse/shared/node_modules/vue-demi/lib/v2.7/index.cjs",
+    "node_modules/@vueuse/shared/node_modules/vue-demi/lib/v2/index.mjs",
+    "node_modules/caniuse-lite/README.md",
+    "node_modules/eslint-plugin-import-x/README.md",
+    "node_modules/speech-rule-engine/lib/README.md",
+    "node_modules/@unocss/eslint-plugin/node_modules/@typescript-eslint/typescript-estree/README.md",
+    "node_modules/@vue/compiler-sfc/README.md",
+    "node_modules/slashes/README.md",
+    "node_modules/@types/lodash/README.md",
+    "node_modules/toml-eslint-parser/README.md",
+    "node_modules/jiti/README.md",
+    "node_modules/eslint-plugin-vitest/node_modules/@typescript-eslint/scope-manager/README.md",
+    "node_modules/hast-util-from-selector/node_modules/css-selector-parser/README.md",
+    "node_modules/@vueuse/core/node_modules/vue-demi/README.md",
+    "node_modules/mdn-data/css/readme.md",
+    "node_modules/eslint-plugin-import-x/node_modules/@typescript-eslint/types/README.md",
+    "node_modules/domutils/readme.md",
+    "node_modules/@vue/runtime-core/README.md",
+    "node_modules/@nolebase/ui/README.md",
+    "node_modules/@unocss/eslint-plugin/node_modules/@typescript-eslint/visitor-keys/README.md",
+    "node_modules/hast-util-from-selector/node_modules/hastscript/readme.md",
+    "node_modules/@vue/compiler-core/README.md",
+    "node_modules/web-resource-inliner/node_modules/entities/readme.md",
+    "node_modules/dom-serializer/node_modules/entities/readme.md",
+    "node_modules/@nolebase/vitepress-plugin-og-image/dist/vitepress/assets/og-template.svg",
+    "node_modules/@unocss/inspector/dist/client/favicon.svg",
+    "node_modules/vite-plugin-inspect/dist/client/favicon.svg",
+    "node_modules/date-fns/docs/logotype.svg",
+    "node_modules/date-fns/docs/logo.svg",
+    "笔记/🪄 Vtuber/assets/Pasted image 20231212122507.png",
+    "笔记/🪄 Vtuber/assets/Pasted image 20231212122502.png",
+    "笔记/🪄 Vtuber/assets/Pasted image 20231209163759.png",
+    "笔记/🪄 Vtuber/assets/Pasted image 20231209163219.png",
+    "笔记/🪄 Vtuber/assets/Pasted image 20231209163146.png",
+    "未命名.canvas"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "userIgnoreFilters": [
+    "metadata/",
+    "netlify/",
+    "public/",
+    "scripts/"
+  ]
+}
