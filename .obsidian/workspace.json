@@ -157,18 +157,6 @@
             }
           },
           {
-            "id": "d05b2adb58e8f322",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              }
-            }
-          },
-          {
             "id": "dedba0695c22f869",
             "type": "leaf",
             "state": {
@@ -186,7 +174,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "00f8f8ad2cb9f9b0",
@@ -251,23 +240,24 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9b92f36af2f6ad1e",
+  "active": "b5dfc4e6c8287ee4",
   "lastOpenFiles": [
-    "article/Engineering/Python Launching.md",
+    "article/Engineering/Blogging with Notion.md",
     "article/Security/Windows Sandbox from Scratch.md",
+    "article/Engineering/Python Launching.md",
+    "article/index.md",
+    "views/Drafts.md",
+    "views/Untagged.md",
     "vite.config.ts.timestamp-1722846839405-20dc222fbecac.mjs",
     "vite.config.ts.timestamp-1722846731444-7dac289c50046.mjs",
     "vite.config.ts.timestamp-1722846724331-e9bcf886e5c82.mjs",
     "vite.config.ts.timestamp-1722846649697-bd474823de527.mjs",
     "vite.config.ts.timestamp-1722846642666-8edfd23c31681.mjs",
-    "article/index.md",
     "vite.config.ts.timestamp-1722846421565-d0e9c6f55b42.mjs",
     "article/Engineering/Windows",
     "article/Engineering",
     "vite.config.ts.timestamp-1722845661915-66ce2e8fd831d.mjs",
-    "views/Untagged.md",
     "article/Security",
-    "views/Drafts.md",
     "视图/尚未编写完成的页面.md",
     "node_modules/caniuse-lite/README.md",
     "node_modules/eslint-plugin-import-x/README.md",
