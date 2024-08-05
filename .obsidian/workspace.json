@@ -11,11 +11,40 @@
             "id": "8fdbc022d1449898",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "article/index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "522d12dd9493cce7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9b92f36af2f6ad1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/Security/Windows Sandbox from Scratch.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,6 +127,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "article/Security/Windows Sandbox from Scratch.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -143,7 +173,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "article/Security/Windows Sandbox from Scratch.md"
+              }
             }
           },
           {
@@ -167,6 +199,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "article/Security/Windows Sandbox from Scratch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,6 +216,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "article/Security/Windows Sandbox from Scratch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,22 +251,24 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8fdbc022d1449898",
+  "active": "9b92f36af2f6ad1e",
   "lastOpenFiles": [
-    "视图/尚未编写完成的页面.md",
-    "views/未添加标签的页面.md",
-    "views/尚未编写完成的页面.md",
-    "views",
+    "article/Engineering/Python Launching.md",
+    "article/Security/Windows Sandbox from Scratch.md",
+    "vite.config.ts.timestamp-1722846839405-20dc222fbecac.mjs",
+    "vite.config.ts.timestamp-1722846731444-7dac289c50046.mjs",
+    "vite.config.ts.timestamp-1722846724331-e9bcf886e5c82.mjs",
+    "vite.config.ts.timestamp-1722846649697-bd474823de527.mjs",
+    "vite.config.ts.timestamp-1722846642666-8edfd23c31681.mjs",
     "article/index.md",
-    "article",
-    "package-lock.json",
-    "node_modules/@vueuse/shared/node_modules/vue-demi/lib/v3/index.mjs",
-    "node_modules/@vueuse/shared/node_modules/vue-demi/lib/v3/index.d.ts",
-    "node_modules/@vueuse/shared/node_modules/vue-demi/lib/v3/index.cjs",
-    "node_modules/@vueuse/shared/node_modules/vue-demi/lib/v2.7/index.mjs",
-    "node_modules/@vueuse/shared/node_modules/vue-demi/lib/v2.7/index.d.ts",
-    "node_modules/@vueuse/shared/node_modules/vue-demi/lib/v2.7/index.cjs",
-    "node_modules/@vueuse/shared/node_modules/vue-demi/lib/v2/index.mjs",
+    "vite.config.ts.timestamp-1722846421565-d0e9c6f55b42.mjs",
+    "article/Engineering/Windows",
+    "article/Engineering",
+    "vite.config.ts.timestamp-1722845661915-66ce2e8fd831d.mjs",
+    "views/Untagged.md",
+    "article/Security",
+    "views/Drafts.md",
+    "视图/尚未编写完成的页面.md",
     "node_modules/caniuse-lite/README.md",
     "node_modules/eslint-plugin-import-x/README.md",
     "node_modules/speech-rule-engine/lib/README.md",
@@ -252,9 +288,6 @@
     "node_modules/@nolebase/ui/README.md",
     "node_modules/@unocss/eslint-plugin/node_modules/@typescript-eslint/visitor-keys/README.md",
     "node_modules/hast-util-from-selector/node_modules/hastscript/readme.md",
-    "node_modules/@vue/compiler-core/README.md",
-    "node_modules/web-resource-inliner/node_modules/entities/readme.md",
-    "node_modules/dom-serializer/node_modules/entities/readme.md",
     "node_modules/@nolebase/vitepress-plugin-og-image/dist/vitepress/assets/og-template.svg",
     "node_modules/@unocss/inspector/dist/client/favicon.svg",
     "node_modules/vite-plugin-inspect/dist/client/favicon.svg",

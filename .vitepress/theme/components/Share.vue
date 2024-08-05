@@ -54,7 +54,9 @@ async function getShareLink(): Promise<string> {
   if (
     window.location.hostname !== plainTargetDomain
     || window.location.pathname.length <= 20
-  ) return window.location.href
+  ) {
+    return window.location.href
+  }
 
   const url = window.location.href
 
@@ -115,11 +117,11 @@ function copyShareLink() {
     >
       <span v-if="shareSuccess" flex items-center space-x-1>
         <span class="i-octicon:checkbox-16" />
-        <span>复制成功</span>
+        <span>Copied</span>
       </span>
       <span v-else flex items-center space-x-1>
         <span class="i-octicon:share-16" />
-        <span>分享此页</span>
+        <span>Copy Link</span>
       </span>
     </Transition>
   </button>

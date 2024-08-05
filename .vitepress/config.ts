@@ -9,7 +9,7 @@ import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-i
 import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
 import { transformHeadMeta } from '@nolebase/vitepress-plugin-meta'
 
-import { creatorNames, creatorUsernames, discordLink, githubRepoLink, siteDescription, siteName, targetDomain } from '../metadata'
+import { creatorNames, creatorUsernames, githubRepoLink, siteDescription, siteName, targetDomain } from '../metadata'
 import { sidebar } from './docsMetadata.json'
 
 export default defineConfig({
@@ -25,7 +25,7 @@ export default defineConfig({
       },
     },
   },
-  lang: 'zh-CN',
+  lang: 'en-US',
   title: siteName,
   description: siteDescription,
   ignoreDeadLinks: true,
@@ -123,45 +123,45 @@ export default defineConfig({
     }],
     // Proxying Plausible through Netlify | Plausible docs
     // https://plausible.io/docs/proxy/guides/netlify
-    ['script', { 'defer': 'true', 'data-domain': 'nolebase.ayaka.io', 'data-api': '/api/v1/page-external-data/submit', 'src': '/assets/page-external-data/js/script.js' }],
+    // ['script', { 'defer': 'true', 'data-domain': 'nolebase.ayaka.io', 'data-api': '/api/v1/page-external-data/submit', 'src': '/assets/page-external-data/js/script.js' }],
   ],
   themeConfig: {
-    outline: { label: '页面大纲', level: 'deep' },
-    darkModeSwitchLabel: '切换主题',
-    editLink: {
-      pattern: `${githubRepoLink}/tree/main/:path`,
-      text: '编辑本页面',
-    },
+    outline: { label: 'Outline', level: 'deep' },
+    darkModeSwitchLabel: 'Theme',
+    // editLink: {
+    //   pattern: `${githubRepoLink}/tree/main/:path`,
+    //   text: 'Edit this page on GitHub',
+    // },
     socialLinks: [
       { icon: 'github', link: githubRepoLink },
       // { icon: 'discord', link: discordLink },
     ],
     footer: {
-      message: '用 <span style="color: #e25555;">&#9829;</span> 撰写',
+      message: 'Built with <a href="https://obsidian.md/" target="_blank">Obsidian</a> and <a href="https://vitepress.dev/" target="_blank">VitePress</a>. Derived from <a class="footer-cc-link" target="_blank" href="https://github.com/nolebase/nolebase">Nolebase</a>',
       copyright:
-        '<a class="footer-cc-link" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> © 2022-PRESENT Nólëbase 的创作者们',
+        'Nolebase Theme licensed under <a class="footer-cc-link" target="_blank" href="https://github.com/nolebase/nolebase/blob/bbc71d732ad3b061543ba2e4097e3a49567eee8a/LICENSE">MIT</a> ',
     },
     search: {
       provider: 'local',
       options: {
-        locales: {
-          root: {
-            translations: {
-              button: {
-                buttonText: '搜索文档',
-                buttonAriaLabel: '搜索文档',
-              },
-              modal: {
-                noResultsText: '无法找到相关结果',
-                resetButtonTitle: '清除查询条件',
-                footer: {
-                  selectText: '选择',
-                  navigateText: '切换',
-                },
-              },
-            },
-          },
-        },
+        // locales: {
+        //   root: {
+        //     translations: {
+        //       button: {
+        //         buttonText: '搜索文档',
+        //         buttonAriaLabel: '搜索文档',
+        //       },
+        //       modal: {
+        //         noResultsText: '无法找到相关结果',
+        //         resetButtonTitle: '清除查询条件',
+        //         footer: {
+        //           selectText: '选择',
+        //           navigateText: '切换',
+        //         },
+        //       },
+        //     },
+        //   },
+        // },
 
         // Add title ang tags field in frontmatter to search
         // You can exclude a page from search by adding search: false to the page's frontmatter.
@@ -208,9 +208,9 @@ export default defineConfig({
       },
     },
     nav: [
-      { text: '主页', link: '/' },
-      { text: '笔记', link: '/笔记/' },
-      { text: '最近更新', link: '/toc' },
+      { text: 'Latest Posts', link: '/' },
+      { text: 'Archives', link: '/article/' },
+      // { text: '最近更新', link: '/toc' },
     ],
     sidebar,
   },

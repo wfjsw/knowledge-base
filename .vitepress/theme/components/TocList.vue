@@ -17,7 +17,7 @@ const list = computed(() => {
 
 const sortedList = computed(() => {
   const ls = [...list.value]
-  return ls.sort((a, b) => (b.lastUpdated || 0) - (a.lastUpdated || 0))
+  return ls.sort((a, b) => (b.lastUpdated || 0) - (a.lastUpdated || 0)).slice(0, 10)
 })
 </script>
 
@@ -32,14 +32,14 @@ const sortedList = computed(() => {
       <div class="inline-block">
         <span class="i-octicon:repo-16 align-middle text-xs opacity-50" />
         <span class="align-middle opacity-50">
-          类别：
+          Category：
         </span>
         <span class="rounded-sm bg-[var(--vp-c-bg-mute)] px-6px py-3px align-middle opacity-70">{{ item.category }}</span>
       </div>
       <div class="inline-block opacity-50">
         <span class="i-octicon:history-16 align-middle text-xs" />
         <span class="align-middle">
-          更新时间：{{ new Date(item.lastUpdated || 0).toLocaleDateString() }}
+          Updated at：{{ new Date(item.lastUpdated || 0).toLocaleDateString() }}
         </span>
       </div>
     </div>

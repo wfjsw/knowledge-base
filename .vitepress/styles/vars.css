@@ -118,3 +118,7 @@
 :root {
   --vp-nolebase-highlight-targeted-heading-bg: rgba(253, 216, 95, 0.31);
 }
+
+:root {
+  --vp-sidebar-width: 320px;
+}

@@ -32,7 +32,7 @@ import {
 import AppContainer from './components/AppContainer.vue'
 import DocFooter from './components/DocFooter.vue'
 import HomePage from './components/HomePage.vue'
-import Share from './components/Share.vue'
+// import Share from './components/Share.vue'
 import TocList from './components/TocList.vue'
 
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
@@ -63,7 +63,7 @@ const ExtendedTheme: Theme = {
       ],
       'nav-bar-content-after': () => [
         h(NolebaseEnhancedReadabilitiesMenu),
-        h(Share),
+        // h(Share),
       ],
       'nav-screen-content-after': () => [
         h(NolebaseEnhancedReadabilitiesScreenMenu),
@@ -78,9 +78,9 @@ const ExtendedTheme: Theme = {
      * https://github.com/vuejs/vitepress/issues/1918
      */
 
-    app.component('HomePage', HomePage)
+    // app.component('HomePage', HomePage)
     app.component('DocFooter', DocFooter)
-    app.component('Share', Share)
+    // app.component('Share', Share)
     app.component('TocList', TocList)
     app.component('AppContainer', AppContainer)
     app.component('NolebaseUnlazyImg', NolebaseUnlazyImg)
@@ -106,17 +106,17 @@ const ExtendedTheme: Theme = {
           {
             key: 'tags',
             type: 'tags',
-            title: '标签',
+            title: 'Tags',
           },
           {
             key: 'progress',
             type: 'progress',
-            title: '完成进度',
+            title: 'Progress',
           },
           {
             key: 'wordCount',
             type: 'dynamic',
-            title: '字数',
+            title: 'Word Count',
             options: {
               type: 'wordsCount',
             },
@@ -124,10 +124,10 @@ const ExtendedTheme: Theme = {
           {
             key: 'readingTime',
             type: 'dynamic',
-            title: '阅读时间',
+            title: 'Reading Time',
             options: {
               type: 'readingTime',
-              dateFnsLocaleName: 'zhCN',
+              dateFnsLocaleName: 'enUS',
             },
           },
         ],
