@@ -4,5 +4,11 @@
     "netlify/",
     "public/",
     "scripts/"
+  ],
+  "spellcheckDictionary": [
+    "Sandboxie",
+    "AppContainers",
+    "LowBox",
+    "DACL"
   ]
 }
