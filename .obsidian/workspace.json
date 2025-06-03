@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/Security/Windows Sandbox from Scratch.md",
-                "mode": "preview",
+                "file": "article/SysAdmin/Alpine and DHCPv6.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Windows Sandbox from Scratch"
+              "title": "Alpine and DHCPv6"
             }
           }
         ],
@@ -144,7 +144,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "article/Security/Windows Sandbox from Scratch.md",
+                "file": "article/SysAdmin/Alpine and DHCPv6.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -172,7 +172,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Windows Sandbox from Scratch"
+              "title": "Graph of Alpine and DHCPv6"
             }
           },
           {
@@ -181,13 +181,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/Security/Windows Sandbox from Scratch.md",
+                "file": "article/SysAdmin/Alpine and DHCPv6.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Windows Sandbox from Scratch"
+              "title": "Outline of Alpine and DHCPv6"
             }
           },
           {
@@ -210,10 +210,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "article/Security/Windows Sandbox from Scratch.md"
+                "file": "article/SysAdmin/Alpine and DHCPv6.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Windows Sandbox from Scratch"
+              "title": "File properties for Alpine and DHCPv6"
             }
           },
           {
@@ -240,7 +240,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Security/Windows Sandbox from Scratch.md",
+                "file": "article/SysAdmin/Alpine and DHCPv6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -250,7 +250,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Windows Sandbox from Scratch"
+              "title": "Backlinks for Alpine and DHCPv6"
             }
           },
           {
@@ -259,12 +259,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Security/Windows Sandbox from Scratch.md",
+                "file": "article/SysAdmin/Alpine and DHCPv6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Windows Sandbox from Scratch"
+              "title": "Outgoing links from Alpine and DHCPv6"
             }
           },
           {
@@ -299,12 +299,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b5dfc4e6c8287ee4",
+  "active": "9b92f36af2f6ad1e",
   "lastOpenFiles": [
+    "article/index.md",
+    "article/SysAdmin/Alpine and DHCPv6.md",
+    "article/Security/Windows Sandbox from Scratch.md",
     "article/Engineering/Python Launching.md",
     "article/Engineering/Blogging with Notion.md",
-    "article/index.md",
-    "article/Security/Windows Sandbox from Scratch.md",
+    "article/Untitled.canvas",
+    "article/SysAdmin",
     "views/Drafts.md",
     "views/Untagged.md",
     "vite.config.ts.timestamp-1722880130684-8179b820cddee.mjs",
@@ -316,7 +319,6 @@
     "node_modules/@rollup/rollup-win32-arm64-msvc",
     "node_modules/fsevents",
     "node_modules/@rollup/rollup-linux-x64-musl",
-    "node_modules/@rollup/rollup-linux-x64-gnu",
     "node_modules/@typescript-eslint/typescript-estree/node_modules/slash/readme.md",
     "node_modules/@typescript-eslint/visitor-keys/node_modules/eslint-visitor-keys/README.md",
     "node_modules/@typescript-eslint/eslint-plugin/docs/rules/type-annotation-spacing.md",
@@ -335,8 +337,6 @@
     "node_modules/@typescript-eslint/eslint-plugin/docs/rules/lines-between-class-members.md",
     "node_modules/@typescript-eslint/eslint-plugin/docs/rules/lines-around-comment.md",
     "node_modules/@typescript-eslint/eslint-plugin/docs/rules/keyword-spacing.md",
-    "node_modules/@typescript-eslint/eslint-plugin/docs/rules/key-spacing.md",
-    "node_modules/@typescript-eslint/eslint-plugin/docs/rules/indent.md",
     "node_modules/@nolebase/vitepress-plugin-og-image/dist/vitepress/assets/og-template.svg",
     "node_modules/@unocss/inspector/dist/client/favicon.svg",
     "node_modules/vite-plugin-inspect/dist/client/favicon.svg",
