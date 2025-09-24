@@ -1,9 +1,6 @@
 ---
 status: Drafts
 ---
-
-
-
 > [!WARNING] Warning
 > The article is incomplete as of now, while the code is still under development.
 
