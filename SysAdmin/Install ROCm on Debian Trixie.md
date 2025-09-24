@@ -1,5 +1,3 @@
-# Install ROCm on Debian Trixie
-
 ## Driver
 
 Install driver according to the suggestion outlined [in this GitHub issue comment](https://github.com/ROCm/ROCm/issues/5111#issuecomment-3288690022)
