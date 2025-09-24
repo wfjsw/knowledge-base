@@ -1,6 +1,3 @@
-
-# Blogging with Notion and VitePress
-
 ## Why Notion
 
 ## VitePress Dynamic Routes

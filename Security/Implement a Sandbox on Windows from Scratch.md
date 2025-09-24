@@ -1,7 +1,7 @@
 ---
 status: Drafts
 ---
-# Implement a Sandbox on Windows from Scratch
+
 
 
 > [!WARNING] Warning
@@ -11,7 +11,7 @@ status: Drafts
 
 Someone put Trojans into [an extension][1] through malicious pip packages that steals cookies and passwords. Honestly speaking, this is not surprising at all, as the entire extension system is built upon unlimited Python code execution, and security on this crap is a lost cause. 
 
-Someone says that everyone should use Docker or Sandboxie. That's a great suggestion, except that it is not super practical for non-experts. [[Python Launching|Launching the Python]] is hard enough, and why extra burden? In addition to that, Docker requires WSL and Sandboxie requires configuration, subscription and kernel drivers. I don't think they justify this case.
+Someone says that everyone should use Docker or Sandboxie. That's a great suggestion, except that it is not super practical for non-experts. [[Launch the Python in the Hard Way|Launching the Python]] is hard enough, and why extra burden? In addition to that, Docker requires WSL and Sandboxie requires configuration, subscription and kernel drivers. I don't think they justify this case.
 
 So here I am, trying to put together a portable sandbox without having to resort to kernel side. (It is expensive to deploy a kernel-mode driver!)
 

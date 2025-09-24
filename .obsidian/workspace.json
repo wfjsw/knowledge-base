@@ -11,14 +11,10 @@
             "id": "8fdbc022d1449898",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/index.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "index"
+              "title": "New tab"
             }
           },
           {
@@ -41,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/SysAdmin/Alpine and DHCPv6.md",
+                "file": "SysAdmin/Install ROCm on Debian Trixie.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Alpine and DHCPv6"
+              "title": "Install ROCm on Debian Trixie"
             }
           }
         ],
@@ -94,16 +90,6 @@
             }
           },
           {
-            "id": "f568bf7e439d398b",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
             "id": "955041b03cbffb02",
             "type": "leaf",
             "state": {
@@ -119,8 +105,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "lucide-ghost",
+              "title": "recent-files"
             }
           }
         ]
@@ -200,8 +186,8 @@
                 "showSearch": false,
                 "searchQuery": ""
               },
-              "icon": "lucide-archive",
-              "title": "All properties"
+              "icon": "lucide-ghost",
+              "title": "all-properties"
             }
           },
           {
@@ -212,8 +198,8 @@
               "state": {
                 "file": "article/SysAdmin/Alpine and DHCPv6.md"
               },
-              "icon": "lucide-info",
-              "title": "File properties for Alpine and DHCPv6"
+              "icon": "lucide-ghost",
+              "title": "file-properties"
             }
           },
           {
@@ -240,7 +226,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/SysAdmin/Alpine and DHCPv6.md",
+                "file": "SysAdmin/Install ROCm on Debian Trixie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -250,7 +236,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Alpine and DHCPv6"
+              "title": "Backlinks for Install ROCm on Debian Trixie"
             }
           },
           {
@@ -290,17 +276,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "9b92f36af2f6ad1e",
   "lastOpenFiles": [
+    "SysAdmin/Alpine and DHCPv6.md",
+    "Security/Implement a Sandbox on Windows from Scratch.md",
+    "Engineering/Launch the Python in the Hard Way.md",
+    "Engineering/Blogging with Notion and VitePress.md",
+    "Home.md",
+    "SysAdmin/Install ROCm on Debian Trixie.md",
+    "Untitled.base",
     "article/index.md",
     "article/SysAdmin/Alpine and DHCPv6.md",
     "article/Security/Windows Sandbox from Scratch.md",
@@ -318,7 +312,6 @@
     "node_modules/@esbuild/aix-ppc64",
     "node_modules/@rollup/rollup-win32-arm64-msvc",
     "node_modules/fsevents",
-    "node_modules/@rollup/rollup-linux-x64-musl",
     "node_modules/@typescript-eslint/typescript-estree/node_modules/slash/readme.md",
     "node_modules/@typescript-eslint/visitor-keys/node_modules/eslint-visitor-keys/README.md",
     "node_modules/@typescript-eslint/eslint-plugin/docs/rules/type-annotation-spacing.md",
@@ -332,11 +325,6 @@
     "node_modules/@typescript-eslint/eslint-plugin/docs/rules/padding-line-between-statements.md",
     "node_modules/@typescript-eslint/eslint-plugin/docs/rules/object-curly-spacing.md",
     "node_modules/@typescript-eslint/eslint-plugin/docs/rules/no-extra-semi.md",
-    "node_modules/@typescript-eslint/eslint-plugin/docs/rules/no-extra-parens.md",
-    "node_modules/@typescript-eslint/eslint-plugin/docs/rules/member-delimiter-style.md",
-    "node_modules/@typescript-eslint/eslint-plugin/docs/rules/lines-between-class-members.md",
-    "node_modules/@typescript-eslint/eslint-plugin/docs/rules/lines-around-comment.md",
-    "node_modules/@typescript-eslint/eslint-plugin/docs/rules/keyword-spacing.md",
     "node_modules/@nolebase/vitepress-plugin-og-image/dist/vitepress/assets/og-template.svg",
     "node_modules/@unocss/inspector/dist/client/favicon.svg",
     "node_modules/vite-plugin-inspect/dist/client/favicon.svg",

@@ -19,4 +19,6 @@ sub setup_network {
 
 ```
 
-A bit of search turns that there is another implementation
+A bit of search turns that there is another implementation `dhcpcd` where it allows full-featured DHCPv4 + DHCPv6 + SLAAC. As a plus (it might be annoying for other users), it would not read the `/etc/network/interfaces` file, so the problematic PVE-generated file will not obstruct this client from running. Instead, a config file `/etc/dhcpcd.conf` is then used. 
+
+It is worth noting that, despite `dhcpcd` will install its own service daemon config, it is better off not using them, and it will create problems. Instead, let it launch with the `networking`service instead.
