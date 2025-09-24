@@ -32,6 +32,19 @@ Install driver according to the suggestion outlined [in this GitHub issue commen
 > dpkg-reconfigure amdgpu-dkms
 > ```
 
+**UPDATE:**
+Note that it would get quite annoying when:
+- You install both NVIDIA and AMD drivers
+- There is a Linux kernel update.
+
+Basically at that time, AMD and NVIDIA driver will both attempt to build, and the changes made for AMD will break NVIDIA. A way to do this is:
+
+1. Run `apt upgrade` first, and notice that `dpkg` is in a broken state.
+2. Run `SRCARCH=x86 apt install -f` to try to build the AMD module. It will fail again, but this time on NVIDIA.
+3. Temporarily hide the `/usr/src/ofa_kernel` folder. Then run `apt install -f` again to build NVIDIA driver. Note this time the `SRCARCH` environment variable is not set. They will be installed after they are successfully built.
+4. Clean up and undo the hide. 
+5. Profit.
+
 ## ROCm
 
 ### Install
