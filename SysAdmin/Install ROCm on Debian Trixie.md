@@ -66,7 +66,7 @@ Description: dummy libstdc++-11-dev package
 
 `libgcc-11-dev.equivs`
 ```
-ackage: libgcc-11-dev
+Package: libgcc-11-dev
 Version: 99.99
 Maintainer: Your Name <mail@domain.com>
 Architecture: all

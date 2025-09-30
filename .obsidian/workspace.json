@@ -4,49 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "82a8c0d8a989a292",
+        "id": "1036ab06a717f230",
         "type": "tabs",
         "children": [
           {
-            "id": "8fdbc022d1449898",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "522d12dd9493cce7",
+            "id": "e50f2ba2d0f8753b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/index.md",
+                "file": "Engineering/Launch the Python in the Hard Way.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "9b92f36af2f6ad1e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SysAdmin/Install ROCm on Debian Trixie.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Install ROCm on Debian Trixie"
+              "title": "Launch the Python in the Hard Way"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -226,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SysAdmin/Install ROCm on Debian Trixie.md",
+                "file": "Engineering/Launch the Python in the Hard Way.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -236,7 +211,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Install ROCm on Debian Trixie"
+              "title": "Backlinks for Launch the Python in the Hard Way"
             }
           },
           {
@@ -286,12 +261,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9b92f36af2f6ad1e",
+  "active": "e50f2ba2d0f8753b",
   "lastOpenFiles": [
-    "SysAdmin/Alpine and DHCPv6.md",
+    "Security/Windows Software Sandboxing from Scratch.md",
     "SysAdmin/Use alternatives to manage Java.md",
     "SysAdmin/Install ROCm on Debian Trixie.md",
-    "Security/Windows Software Sandboxing from Scratch.md",
+    "SysAdmin/Alpine and DHCPv6.md",
     "Engineering/Launch the Python in the Hard Way.md",
     "Engineering/Blogging with Notion and VitePress.md",
     "Home.md",
