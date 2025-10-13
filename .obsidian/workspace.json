@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Campus Life/UT Dallas/Set up ECS PaperCut Printer in Debian.md",
+                "file": "Campus Life/UT Dallas/Set up UTD ECS PaperCut Printer in Debian.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Set up ECS PaperCut Printer in Debian"
+              "title": "Set up UTD ECS PaperCut Printer in Debian"
             }
           }
         ]
@@ -201,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Campus Life/UT Dallas/Set up ECS PaperCut Printer in Debian.md",
+                "file": "Campus Life/UT Dallas/Set up UTD ECS PaperCut Printer in Debian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Set up ECS PaperCut Printer in Debian"
+              "title": "Backlinks for Set up UTD ECS PaperCut Printer in Debian"
             }
           },
           {
@@ -264,7 +264,7 @@
   "active": "e50f2ba2d0f8753b",
   "lastOpenFiles": [
     "Home.md",
-    "Campus Life/UT Dallas/Set up ECS PaperCut Printer in Debian.md",
+    "Campus Life/UT Dallas/Set up UTD ECS PaperCut Printer in Debian.md",
     "Campus Life/UT Dallas",
     "Campus Life",
     "SysAdmin/Use alternatives to manage Java.md",
