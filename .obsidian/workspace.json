@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Campus Life/UT Dallas/Set up UTD ECS PaperCut Printer in Debian.md",
+                "file": "SysAdmin/Podman Rootless File Permission Issue.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Set up UTD ECS PaperCut Printer in Debian"
+              "title": "Podman Rootless File Permission Issue"
             }
           }
         ]
@@ -201,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Campus Life/UT Dallas/Set up UTD ECS PaperCut Printer in Debian.md",
+                "file": "SysAdmin/Podman Rootless File Permission Issue.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Set up UTD ECS PaperCut Printer in Debian"
+              "title": "Backlinks for Podman Rootless File Permission Issue"
             }
           },
           {
@@ -263,13 +263,14 @@
   },
   "active": "e50f2ba2d0f8753b",
   "lastOpenFiles": [
-    "Home.md",
     "Campus Life/UT Dallas/Set up UTD ECS PaperCut Printer in Debian.md",
-    "Campus Life/UT Dallas",
-    "Campus Life",
-    "SysAdmin/Use alternatives to manage Java.md",
+    "SysAdmin/Podman Rootless File Permission Issue.md",
     "Security/Windows Software Sandboxing from Scratch.md",
     "Engineering/Launch the Python in the Hard Way.md",
+    "Home.md",
+    "SysAdmin/Use alternatives to manage Java.md",
+    "Campus Life/UT Dallas",
+    "Campus Life",
     "SysAdmin/Install ROCm on Debian Trixie.md",
     "SysAdmin/Alpine and DHCPv6.md",
     "Engineering/Blogging with Notion and VitePress.md",
@@ -299,7 +300,6 @@
     "node_modules/@typescript-eslint/eslint-plugin/docs/rules/semi.md",
     "node_modules/@typescript-eslint/eslint-plugin/docs/rules/README.md",
     "node_modules/@typescript-eslint/eslint-plugin/docs/rules/quotes.md",
-    "node_modules/@typescript-eslint/eslint-plugin/docs/rules/padding-line-between-statements.md",
     "node_modules/@nolebase/vitepress-plugin-og-image/dist/vitepress/assets/og-template.svg",
     "node_modules/@unocss/inspector/dist/client/favicon.svg",
     "node_modules/vite-plugin-inspect/dist/client/favicon.svg",
