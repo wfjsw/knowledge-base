@@ -41,22 +41,19 @@ jobs:
           INPUT_SITE_HOST: kb.jianshuw.in
           INPUT_SITE_TITLE: ByteSized Insights
           INPUT_HOME_PATH: Home.md
-          INPUT_OPTIONS_PATH: .publish/options.json
+          INPUT_OPTIONS_PATH: vault/.publish/options.json
           INPUT_INJECT_JS: ""
           INPUT_INJECT_CSS: ""
-          INPUT_VAULT_DIR: "."
-          INPUT_OUTPUT_DIR: "."
+          INPUT_VAULT_DIR: vault
+          INPUT_OUTPUT_DIR: dist
           INPUT_CACHE_TIMEOUT_SECONDS: "180"
-          VAULT_WORKSPACE: ${{ github.workspace }}/vault
-          DIST_WORKSPACE: ${{ github.workspace }}/dist
         run: |
-          mkdir -p "$DIST_WORKSPACE"
+          rm -rf dist
+          mkdir -p dist
 
           docker run --rm \
-            -v "$VAULT_WORKSPACE:/github/workspace:ro" \
-            -v "$DIST_WORKSPACE:/github/output" \
+            -v "${{ github.workspace }}:/github/workspace" \
             -e GITHUB_WORKSPACE=/github/workspace \
-            -e OUTPUT_WORKSPACE=/github/output \
             -e INPUT_SITE_UID \
             -e INPUT_SITE_HOST \
             -e INPUT_SITE_TITLE \
