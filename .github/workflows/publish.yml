@@ -45,7 +45,7 @@ jobs:
           INPUT_INJECT_JS: ""
           INPUT_INJECT_CSS: ""
           INPUT_VAULT_DIR: "."
-          INPUT_OUTPUT_DIR: dist
+          INPUT_OUTPUT_DIR: "."
           INPUT_CACHE_TIMEOUT_SECONDS: "180"
           VAULT_WORKSPACE: ${{ github.workspace }}/vault
           DIST_WORKSPACE: ${{ github.workspace }}/dist
@@ -54,8 +54,9 @@ jobs:
 
           docker run --rm \
             -v "$VAULT_WORKSPACE:/github/workspace:ro" \
-            -v "$DIST_WORKSPACE:/github/workspace/dist" \
+            -v "$DIST_WORKSPACE:/github/output" \
             -e GITHUB_WORKSPACE=/github/workspace \
+            -e OUTPUT_WORKSPACE=/github/output \
             -e INPUT_SITE_UID \
             -e INPUT_SITE_HOST \
             -e INPUT_SITE_TITLE \
