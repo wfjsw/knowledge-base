@@ -1,4 +1,4 @@
-> [!TLDR]
+> [!TL;DR]
 > Windows kept losing its public IPv6 SLAAC address because unsolicited ICMPv6 Router Advertisements were visible on the wire but were not being applied by the Windows IPv6 stack. The active Windows Firewall policy was missing the inbound Router Advertisement allow rule. Adding an inbound ICMPv6 type 134 allow rule from link-local routers fixed it:
 >
 > ```powershell
@@ -12,7 +12,7 @@
 >   -Profile Any
 > ```
 
-I had a strange IPv6 problem on Windows where the machine would get a public IPv6 address after plugging in Ethernet, but the address disappeared a few minutes later. Unplugging and replugging the cable made it come back again. Other devices on the same LAN handled IPv6 just fine, so I wanted proof before blaming the router.
+I had a strange IPv6 problem on Windows where the machine would get a public IPv6 address after plugging in Ethernet, but the address disappeared a few minutes later. Unplugging and replugging the cable made it come back again. Other devices on the same LAN handled IPv6 just fine, therefore the router has no problem.
 
 The adapter was a Realtek PCIe GbE controller. The IPv4 side stayed fine. What vanished was the public SLAAC address from the router-advertised prefix:
 
@@ -20,13 +20,11 @@ The adapter was a Realtek PCIe GbE controller. The IPv4 side stayed fine. What v
 Get-NetIPAddress -InterfaceAlias "Ethernet" -AddressFamily IPv6
 ```
 
-The public address was in a prefix like `2001:db8:1234:5678::/64` (example prefix, not my real network). When it was broken, Windows still had link-local IPv6 and could still reach the router link-local address, but the global address was gone. Running this brought it back:
+The public address was in a prefix like `2001:db8:1234:5678::/64`. When it was broken, Windows still had link-local IPv6 and could still reach the router link-local address, but the global address was gone. Running this brought it back:
 
 ```powershell
 ipconfig /renew6 Ethernet
 ```
-
-The command printed a semaphore timeout, but the address and default IPv6 route returned anyway. That was already a useful clue: this was not a physical link failure.
 
 ## Packet capture
 
@@ -63,8 +61,8 @@ Capture ICMPv6 Router Solicitations and Router Advertisements:
 The router was sending valid RAs:
 
 ```text
-src MAC: 60:cf:84:45:83:e0
-src IPv6: fe80::62cf:84ff:fe45:83e0
+src MAC: 12:34:56:78:9a:bc
+src IPv6: fe80::1234:56ff:fe78:9abc
 dst IPv6: ff02::1
 RA router_lifetime: 1800
 prefix: 2001:db8:1234:5678::/64
@@ -81,11 +79,10 @@ When I triggered a Router Solicitation with `ipconfig /renew6 Ethernet`, Windows
 - solicited/unicast RA after `renew6`: accepted
 - unsolicited/multicast RA to `ff02::1`: visible in tshark, but not applied by Windows
 
-That smelled like local filtering.
 
 ## Firewall rule store
 
-The active firewall store barely had any ICMPv6 rules:
+I then turned the attention to the Windows Firewall. The active firewall store barely had any ICMPv6 rules:
 
 ```powershell
 Get-NetFirewallRule -PolicyStore ActiveStore |
@@ -122,7 +119,7 @@ That showed:
 Core Networking - Router Advertisement (ICMPv6-In)
 ```
 
-So Windows knew the default rule, but it was missing from the active policy. That explained why `tshark` could see the Ethernet frames while the IPv6 stack did not refresh the address from unsolicited RAs.
+So Windows knew the default rule, but it was missing from the active policy for some unknown reason. That explained why `tshark` could see the Ethernet frames while the IPv6 stack did not refresh the address from unsolicited RAs.
 
 ## Proof
 
@@ -130,7 +127,7 @@ As a temporary test, I added an inbound allow rule for ICMPv6 Router Advertiseme
 
 ```powershell
 New-NetFirewallRule `
-  -DisplayName "Codex temporary allow ICMPv6 Router Advertisement" `
+  -DisplayName "Temporary allow ICMPv6 Router Advertisement" `
   -Direction Inbound `
   -Action Allow `
   -Protocol ICMPv6 `
@@ -138,9 +135,7 @@ New-NetFirewallRule `
   -Profile Any
 ```
 
-After that, the same multicast RAs started refreshing the Windows lifetime back to around 600 seconds. The address stopped counting down to death.
-
-That made the root cause clear: Windows Firewall active policy was filtering or omitting inbound ICMPv6 Router Advertisements.
+After that, the same multicast RAs started refreshing the Windows lifetime back to around 600 seconds. The address stopped counting down to death. It is then clear that Windows Firewall active policy was filtering or omitting inbound ICMPv6 Router Advertisements.
 
 ## Permanent fix
 
@@ -185,9 +180,3 @@ RemoteAddress: fe80::/10
 ```
 
 After installing the rule, the public IPv6 address stayed alive and the lifetime refreshed on periodic multicast RAs.
-
-## Notes
-
-Do not blindly disable IPv6 to fix this. SLAAC depends on ICMPv6 Router Advertisements. Blocking them breaks normal IPv6 address maintenance in a way that looks like a DHCP or router lifetime problem.
-
-Also, `tshark` seeing packets does not mean the Windows IPv6 stack is applying them. Packet capture can prove the frames reach the NIC. It does not prove higher layers are allowed to consume them.
