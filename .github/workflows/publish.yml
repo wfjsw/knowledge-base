@@ -21,7 +21,7 @@ jobs:
           repository: BadQQ/obsidian-pages-build-action
           ref: master
           token: ${{ secrets.BUILDER_REPO_TOKEN }}
-          path: .publish/builder
+          path: builder
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v4
@@ -41,7 +41,7 @@ jobs:
           INPUT_SITE_HOST: kb.jianshuw.in
           INPUT_SITE_TITLE: ByteSized Insights
           INPUT_HOME_PATH: Home.md
-          INPUT_OPTIONS_PATH: .publish/options.json
+          INPUT_OPTIONS_PATH: vault/.publish/options.json
           INPUT_INJECT_JS: ""
           INPUT_INJECT_CSS: ""
           INPUT_VAULT_DIR: "."
