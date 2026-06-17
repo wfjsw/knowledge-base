@@ -65,7 +65,6 @@
             }
           },
           {
-<<<<<<< HEAD
             "id": "f568bf7e439d398b",
             "type": "leaf",
             "state": {
@@ -76,8 +75,6 @@
             }
           },
           {
-=======
->>>>>>> origin/master
             "id": "955041b03cbffb02",
             "type": "leaf",
             "state": {
@@ -264,10 +261,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-<<<<<<< HEAD
-=======
-      "obsidian-git:Open Git source control": false,
->>>>>>> origin/master
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,

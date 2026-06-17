@@ -1,0 +1,19 @@
+{
+  "siteName": "ByteSized Insights",
+  "indexFile": "Home",
+  "defaultTheme": "system",
+  "showThemeToggle": true,
+  "showHoverPreview": true,
+  "showSearch": true,
+  "showOutline": true,
+  "showBacklinks": true,
+  "hideTitle": false,
+  "navigationOrdering": [
+    "Home.md",
+    "Campus Life",
+    "Engineering",
+    "Security",
+    "SysAdmin"
+  ],
+  "navigationHiddenItems": []
+}

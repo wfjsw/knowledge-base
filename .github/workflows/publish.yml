@@ -1,0 +1,72 @@
+name: Publish
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@v4
+        with:
+          path: vault
+
+      - name: Checkout private builder
+        uses: actions/checkout@v6
+        with:
+          repository: BadQQ/obsidian-pages-build-action
+          ref: master
+          token: ${{ secrets.BUILDER_REPO_TOKEN }}
+          path: .publish/builder
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Build cached builder image
+        uses: docker/build-push-action@v7
+        with:
+          context: .publish/builder
+          load: true
+          tags: obsidian-pages-builder:local
+          cache-from: type=gha,scope=obsidian-pages-builder
+          cache-to: type=gha,mode=max,scope=obsidian-pages-builder
+
+      - name: Build Obsidian Pages artifact
+        env:
+          INPUT_SITE_UID: "1"
+          INPUT_SITE_HOST: kb.jianshuw.in
+          INPUT_SITE_TITLE: ByteSized Insights
+          INPUT_HOME_PATH: Home.md
+          INPUT_OPTIONS_PATH: .publish/options.json
+          INPUT_INJECT_JS: ""
+          INPUT_INJECT_CSS: ""
+          INPUT_VAULT_DIR: "."
+          INPUT_OUTPUT_DIR: dist
+          INPUT_CACHE_TIMEOUT_SECONDS: "180"
+          GITHUB_WORKSPACE: ${{ github.workspace }}/vault
+        run: |
+          docker run --rm \
+            -v "$GITHUB_WORKSPACE:/github/workspace" \
+            -e GITHUB_WORKSPACE=/github/workspace \
+            -e INPUT_SITE_UID \
+            -e INPUT_SITE_HOST \
+            -e INPUT_SITE_TITLE \
+            -e INPUT_HOME_PATH \
+            -e INPUT_OPTIONS_PATH \
+            -e INPUT_INJECT_JS \
+            -e INPUT_INJECT_CSS \
+            -e INPUT_VAULT_DIR \
+            -e INPUT_OUTPUT_DIR \
+            -e INPUT_CACHE_TIMEOUT_SECONDS \
+            obsidian-pages-builder:local
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=wfjsw-devblogs
